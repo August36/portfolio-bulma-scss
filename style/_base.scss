@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+
+// ========================================
+// Global
+// ========================================
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    color: v.$text-color;
+    background-color: v.$hero-background;
+
+    font-family: v.$font-family-base;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+dl,
+dd {
+    margin: 0;
+}

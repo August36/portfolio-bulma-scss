@@ -1,0 +1,57 @@
+@use "variables" as v;
+
+// ========================================
+// Layout
+// ========================================
+
+@mixin nav-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: v.$spacing-md;
+}
+
+
+// ========================================
+// Pseudo elements
+// ========================================
+
+@mixin after($content: "", $position: absolute) {
+    position: relative;
+
+    &::after {
+        content: $content;
+        position: $position;
+        @content;
+    }
+}
+
+
+// ========================================
+// Hover animation
+// ========================================
+
+@mixin hover-lift($scale: 1.05) {
+    transition:
+        transform v.$transition-base,
+        box-shadow v.$transition-base;
+
+    box-shadow: v.$shadow-sm;
+
+    @include after {
+        inset: 0;
+        border-radius: inherit;
+        box-shadow: v.$shadow-md;
+        opacity: 0;
+        transition: opacity v.$transition-base;
+    }
+
+    &:hover,
+    &:focus-visible {
+        transform: scale($scale);
+
+        &::after {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-bulma-scss",
+  "version": "1.0.0",
+  "description": "Portfolio website built with Bulma and Sass",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass style/main.scss style/main.css --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "bulma",
+    "sass"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^1.0.4"
+  },
+  "devDependencies": {
+    "sass": "^1.105.0"
+  }
+}

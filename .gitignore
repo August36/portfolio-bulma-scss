@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Sass generated files
+*.css.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
