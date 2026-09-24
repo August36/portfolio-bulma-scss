@@ -59,8 +59,7 @@ nav {
 
     .hero-intro {
         margin-bottom: 1.5rem;
-
-        color: v.$primary-color;
+        color: v.$text-color;
         font-weight: v.$font-weight-medium;
     }
 
@@ -176,13 +175,17 @@ nav {
 
     padding-bottom: v.$spacing-3xl;
 
-    border-bottom:
-        v.$border-width solid
-        v.$border-subtle;
-
     & + .project {
         margin-top: v.$spacing-3xl;
     }
+}
+
+.project:first-of-type {
+    border-bottom: v.$border-width solid v.$border-subtle;
+}
+
+.project:last-of-type {
+    padding-bottom: 1rem;
 }
 
 
@@ -312,7 +315,7 @@ nav {
     .title {
         margin-bottom: v.$spacing-md;
 
-        color: v.$primary-color;
+        color: v.$text-color;
     }
 
     p {
