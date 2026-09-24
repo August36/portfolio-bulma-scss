@@ -361,7 +361,6 @@ footer {
   .contact-aside {
     padding: 2rem;
     border-top: 1px solid #303944;
-    border-left: none;
   }
 }
 @media screen and (max-width: 480px) {
